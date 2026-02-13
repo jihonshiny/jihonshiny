@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#111113"/>
+    </linearGradient>
+
+    <radialGradient id="glow1" cx="30%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:rgba(88,166,255,0.15)"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="70%" cy="50%" r="35%">
+      <stop offset="0%" style="stop-color:rgba(139,93,246,0.12)"/>
+      <stop offset="100%" style="stop-color:transparent"/>
+    </radialGradient>
+
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="360" cy="150" rx="300" ry="120" fill="url(#glow1)" filter="url(#blur1)">
+    <animate attributeName="cx" values="360;380;360" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <ellipse cx="840" cy="150" rx="250" ry="100" fill="url(#glow2)" filter="url(#blur1)">
+    <animate attributeName="cx" values="840;820;840" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="8s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- Floating particles -->
+  <circle cx="200" cy="80" r="1.5" fill="#58a6ff" opacity="0.6">
+    <animate attributeName="cy" values="80;60;80" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="200" r="1" fill="#8b5cf6" opacity="0.5">
+    <animate attributeName="cy" values="200;180;200" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="900" cy="100" r="1.2" fill="#58a6ff" opacity="0.4">
+    <animate attributeName="cy" values="100;85;100" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="220" r="1" fill="#8b5cf6" opacity="0.3">
+    <animate attributeName="cy" values="220;200;220" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="250" r="0.8" fill="#fff" opacity="0.2">
+    <animate attributeName="cy" values="250;235;250" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="700" cy="60" r="1.3" fill="#58a6ff" opacity="0.3">
+    <animate attributeName="cy" values="60;45;60" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="299" x2="1200" y2="299" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+
+  <!-- Main text -->
+  <text x="600" y="135" text-anchor="middle" font-family="'SF Pro Display', 'Segoe UI', sans-serif" font-size="56" font-weight="700" fill="#e6edf3" letter-spacing="-1">
+    jihonshiny
+    <animate attributeName="opacity" values="0;1" dur="1.5s" fill="freeze"/>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="175" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="16" fill="#8b949e" letter-spacing="3">
+    FRONTEND DEVELOPER
+    <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze"/>
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="500" y1="200" x2="700" y2="200" stroke="rgba(88,166,255,0.3)" stroke-width="1">
+    <animate attributeName="x1" values="550;500;550" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="650;700;650" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="3s" repeatCount="indefinite"/>
+  </line>
+</svg>
