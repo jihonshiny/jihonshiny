@@ -1,57 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="230" viewBox="0 0 800 230">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="250" viewBox="0 0 800 250">
   <defs>
     <linearGradient id="pbg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#131315"/>
-      <stop offset="100%" style="stop-color:#0d0d0f"/>
+      <stop offset="0%" style="stop-color:#12141d"/>
+      <stop offset="100%" style="stop-color:#0e1018"/>
     </linearGradient>
-
     <linearGradient id="pborder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(139,93,246,0.25)">
-        <animate attributeName="stop-color" values="rgba(139,93,246,0.25);rgba(236,72,153,0.25);rgba(139,93,246,0.25)" dur="5s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:rgba(236,72,153,0.25)">
-        <animate attributeName="stop-color" values="rgba(236,72,153,0.25);rgba(139,93,246,0.25);rgba(236,72,153,0.25)" dur="5s" repeatCount="indefinite"/>
-      </stop>
+      <stop offset="0%" style="stop-color:rgba(255,200,120,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(200,160,100,0.05)"/>
     </linearGradient>
-
-    <radialGradient id="pGlow" cx="80%" cy="0%" r="50%">
-      <stop offset="0%" style="stop-color:rgba(139,93,246,0.06)"/>
-      <stop offset="100%" style="stop-color:transparent"/>
-    </radialGradient>
   </defs>
 
-  <rect x="1" y="1" width="798" height="228" rx="16" fill="url(#pbg)"/>
-  <rect x="1" y="1" width="798" height="228" rx="16" fill="url(#pGlow)"/>
-  <rect x="0.5" y="0.5" width="799" height="229" rx="16" fill="none" stroke="url(#pborder)" stroke-width="1"/>
+  <rect x="1" y="1" width="798" height="248" rx="16" fill="url(#pbg)"/>
+  <rect x="0.5" y="0.5" width="799" height="249" rx="16" fill="none" stroke="url(#pborder)" stroke-width="0.5"/>
 
-  <text x="40" y="45" font-family="'SF Mono', 'Fira Code', monospace" font-size="11" fill="#484f58" letter-spacing="2">FEATURED PROJECTS</text>
-  <line x1="195" y1="40" x2="760" y2="40" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- Paw icon -->
+  <g transform="translate(38, 30) scale(0.7)" fill="rgba(255,200,120,0.3)">
+    <ellipse cx="0" cy="0" rx="6" ry="8"/>
+    <circle cx="-6" cy="-9" r="3.5"/>
+    <circle cx="0" cy="-12" r="3.5"/>
+    <circle cx="6" cy="-9" r="3.5"/>
+  </g>
+
+  <text x="60" y="35" font-family="Georgia, serif" font-size="16" fill="#c8b898" font-weight="600">things i've built</text>
+  <line x1="210" y1="30" x2="760" y2="30" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
 
   <!-- Project 1 -->
-  <rect x="40" y="65" width="345" height="65" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
-  <text x="60" y="92" font-family="'SF Pro Text', 'Segoe UI', sans-serif" font-size="14" fill="#e6edf3" font-weight="600">anime-recommend-system</text>
-  <text x="60" y="115" font-family="'SF Mono', monospace" font-size="10" fill="#484f58">Anime recommendation system</text>
-  <circle cx="340" cy="92" r="4" fill="#F37626" opacity="0.8"/>
-  <text x="350" y="96" font-family="'SF Mono', monospace" font-size="9" fill="#8b949e">Jupyter</text>
+  <rect x="40" y="58" width="350" height="72" rx="12" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <text x="60" y="85" font-family="Georgia, serif" font-size="14" fill="#e8e0d4" font-weight="600">anime-recommend-system</text>
+  <text x="60" y="108" font-family="'SF Mono', monospace" font-size="10" fill="#5a5548">content-based anime recommendations</text>
+  <rect x="60" y="115" width="50" height="5" rx="2.5" fill="rgba(243,118,38,0.3)"/>
+  <text x="118" y="120" font-family="'SF Mono', monospace" font-size="9" fill="#8b8578">Jupyter</text>
 
   <!-- Project 2 -->
-  <rect x="405" y="65" width="355" height="65" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
-  <text x="425" y="92" font-family="'SF Pro Text', 'Segoe UI', sans-serif" font-size="14" fill="#e6edf3" font-weight="600">Focus-monitoring</text>
-  <text x="425" y="115" font-family="'SF Mono', monospace" font-size="10" fill="#484f58">Focus monitoring application</text>
-  <circle cx="710" cy="92" r="4" fill="#3776AB" opacity="0.8"/>
-  <text x="720" y="96" font-family="'SF Mono', monospace" font-size="9" fill="#8b949e">Python</text>
+  <rect x="410" y="58" width="350" height="72" rx="12" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <text x="430" y="85" font-family="Georgia, serif" font-size="14" fill="#e8e0d4" font-weight="600">Focus-monitoring</text>
+  <text x="430" y="108" font-family="'SF Mono', monospace" font-size="10" fill="#5a5548">stay focused, good boy!</text>
+  <rect x="430" y="115" width="50" height="5" rx="2.5" fill="rgba(55,118,171,0.3)"/>
+  <text x="488" y="120" font-family="'SF Mono', monospace" font-size="9" fill="#8b8578">Python</text>
 
   <!-- Project 3 -->
-  <rect x="40" y="145" width="345" height="65" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
-  <text x="60" y="172" font-family="'SF Pro Text', 'Segoe UI', sans-serif" font-size="14" fill="#e6edf3" font-weight="600">hate-speech-reporter</text>
-  <text x="60" y="195" font-family="'SF Mono', monospace" font-size="10" fill="#484f58">Hate speech detection &amp; reporting</text>
-  <circle cx="340" cy="172" r="4" fill="#F7DF1E" opacity="0.8"/>
-  <text x="350" y="176" font-family="'SF Mono', monospace" font-size="9" fill="#8b949e">JavaScript</text>
+  <rect x="40" y="148" width="350" height="72" rx="12" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <text x="60" y="175" font-family="Georgia, serif" font-size="14" fill="#e8e0d4" font-weight="600">hate-speech-reporter</text>
+  <text x="60" y="198" font-family="'SF Mono', monospace" font-size="10" fill="#5a5548">keeping the internet a nicer place</text>
+  <rect x="60" y="205" width="50" height="5" rx="2.5" fill="rgba(247,223,30,0.3)"/>
+  <text x="118" y="210" font-family="'SF Mono', monospace" font-size="9" fill="#8b8578">JavaScript</text>
 
   <!-- Project 4 -->
-  <rect x="405" y="145" width="355" height="65" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>
-  <text x="425" y="172" font-family="'SF Pro Text', 'Segoe UI', sans-serif" font-size="14" fill="#e6edf3" font-weight="600">business-closure-rate</text>
-  <text x="425" y="195" font-family="'SF Mono', monospace" font-size="10" fill="#484f58">Business closure rate analysis</text>
-  <circle cx="710" cy="172" r="4" fill="#3776AB" opacity="0.8"/>
-  <text x="720" y="176" font-family="'SF Mono', monospace" font-size="9" fill="#8b949e">Python</text>
+  <rect x="410" y="148" width="350" height="72" rx="12" fill="rgba(255,255,255,0.015)" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>
+  <text x="430" y="175" font-family="Georgia, serif" font-size="14" fill="#e8e0d4" font-weight="600">business-closure-rate</text>
+  <text x="430" y="198" font-family="'SF Mono', monospace" font-size="10" fill="#5a5548">data sniffing for business insights</text>
+  <rect x="430" y="205" width="50" height="5" rx="2.5" fill="rgba(55,118,171,0.3)"/>
+  <text x="488" y="210" font-family="'SF Mono', monospace" font-size="9" fill="#8b8578">Python</text>
 </svg>

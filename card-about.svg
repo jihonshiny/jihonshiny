@@ -1,61 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260" viewBox="0 0 800 260">
   <defs>
     <linearGradient id="abg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#131315"/>
-      <stop offset="100%" style="stop-color:#0d0d0f"/>
+      <stop offset="0%" style="stop-color:#12141d"/>
+      <stop offset="100%" style="stop-color:#0e1018"/>
     </linearGradient>
-
     <linearGradient id="aborder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(63,185,80,0.2)">
-        <animate attributeName="stop-color" values="rgba(63,185,80,0.2);rgba(88,166,255,0.2);rgba(63,185,80,0.2)" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:rgba(88,166,255,0.2)">
-        <animate attributeName="stop-color" values="rgba(88,166,255,0.2);rgba(63,185,80,0.2);rgba(88,166,255,0.2)" dur="6s" repeatCount="indefinite"/>
-      </stop>
+      <stop offset="0%" style="stop-color:rgba(255,200,120,0.15)"/>
+      <stop offset="100%" style="stop-color:rgba(255,200,120,0.05)"/>
     </linearGradient>
-
-    <radialGradient id="aGlow" cx="20%" cy="0%" r="50%">
-      <stop offset="0%" style="stop-color:rgba(63,185,80,0.06)"/>
-      <stop offset="100%" style="stop-color:transparent"/>
-    </radialGradient>
   </defs>
 
-  <rect x="1" y="1" width="798" height="198" rx="16" fill="url(#abg)"/>
-  <rect x="1" y="1" width="798" height="198" rx="16" fill="url(#aGlow)"/>
-  <rect x="0.5" y="0.5" width="799" height="199" rx="16" fill="none" stroke="url(#aborder)" stroke-width="1"/>
+  <rect x="1" y="1" width="798" height="258" rx="16" fill="url(#abg)"/>
+  <rect x="0.5" y="0.5" width="799" height="259" rx="16" fill="none" stroke="url(#aborder)" stroke-width="0.5"/>
 
-  <text x="40" y="45" font-family="'SF Mono', 'Fira Code', monospace" font-size="11" fill="#484f58" letter-spacing="2">ABOUT</text>
-  <line x1="100" y1="40" x2="760" y2="40" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- Paw icon top left -->
+  <g transform="translate(38, 30) scale(0.7)" fill="rgba(255,200,120,0.3)">
+    <ellipse cx="0" cy="0" rx="6" ry="8"/>
+    <circle cx="-6" cy="-9" r="3.5"/>
+    <circle cx="0" cy="-12" r="3.5"/>
+    <circle cx="6" cy="-9" r="3.5"/>
+  </g>
 
-  <!-- Terminal style info -->
-  <text x="40" y="80" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#484f58">
-    <tspan fill="#58a6ff">const</tspan>
-    <tspan fill="#e6edf3"> developer</tspan>
-    <tspan fill="#484f58"> = {</tspan>
+  <text x="60" y="35" font-family="Georgia, serif" font-size="16" fill="#c8b898" font-weight="600">about me</text>
+  <line x1="145" y1="30" x2="760" y2="30" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+
+  <!-- Terminal style with personality -->
+  <text x="40" y="75" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
+    <tspan fill="#5a5548">~</tspan>
+    <tspan fill="#c8b898"> whoami</tspan>
   </text>
 
-  <text x="60" y="105" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
-    <tspan fill="#484f58">name:</tspan>
-    <tspan fill="#a5d6ff"> "빛나"</tspan>
-    <tspan fill="#484f58">,</tspan>
+  <text x="40" y="105" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
+    <tspan fill="#8b8578">name</tspan>
+    <tspan fill="#5a5548"> ........... </tspan>
+    <tspan fill="#e8e0d4">&#xbe5b;&#xb098;</tspan>
   </text>
 
-  <text x="60" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
-    <tspan fill="#484f58">role:</tspan>
-    <tspan fill="#a5d6ff"> "Frontend Developer"</tspan>
-    <tspan fill="#484f58">,</tspan>
+  <text x="40" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
+    <tspan fill="#8b8578">type</tspan>
+    <tspan fill="#5a5548"> ........... </tspan>
+    <tspan fill="#e8e0d4">&#xace0;&#xb4f1;&#xd559;&#xc0dd; &#xd504;&#xb860;&#xd2b8;&#xc5d4;&#xb4dc; &#xac1c;&#xbc1c;&#xc790;</tspan>
   </text>
 
-  <text x="60" y="155" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
-    <tspan fill="#484f58">education:</tspan>
-    <tspan fill="#a5d6ff"> "고등학교 재학 중"</tspan>
-    <tspan fill="#484f58">,</tspan>
+  <text x="40" y="155" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
+    <tspan fill="#8b8578">breed</tspan>
+    <tspan fill="#5a5548"> .......... </tspan>
+    <tspan fill="#e8e0d4">&#xac80;&#xc815; &#xd3ec;&#xba54;&#xb77c;&#xb2c8;&#xc548; (with glasses)</tspan>
   </text>
 
-  <text x="40" y="180" font-family="'SF Mono', 'Fira Code', monospace" font-size="13" fill="#484f58">};</text>
+  <text x="40" y="180" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
+    <tspan fill="#8b8578">skills</tspan>
+    <tspan fill="#5a5548"> ......... </tspan>
+    <tspan fill="#e8e0d4">sitting cute, writing code, debugging</tspan>
+  </text>
 
-  <!-- Blinking cursor -->
-  <rect x="55" y="168" width="8" height="16" fill="#58a6ff" rx="1">
+  <text x="40" y="205" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
+    <tspan fill="#8b8578">loves</tspan>
+    <tspan fill="#5a5548"> .......... </tspan>
+    <tspan fill="#e8e0d4">treats, belly rubs, clean code</tspan>
+  </text>
+
+  <text x="40" y="235" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
+    <tspan fill="#8b8578">status</tspan>
+    <tspan fill="#5a5548"> ......... </tspan>
+    <tspan fill="#c8b898">sniffing around new tech</tspan>
+    <tspan fill="#ffc878"> _</tspan>
+    <animate attributeName="opacity" values="1;1" dur="1s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Blinking block cursor -->
+  <rect x="430" y="222" width="8" height="15" fill="#ffc878" rx="1">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 </svg>
