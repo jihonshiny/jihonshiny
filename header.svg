@@ -132,7 +132,7 @@
 
   <!-- Small quote -->
   <text x="600" y="265" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#5a5548" font-style="italic" opacity="0">
-    "a curious puppy who codes at midnight"
+    "codes at midnight"
     <animate attributeName="opacity" values="0;0.7" dur="2s" fill="freeze" begin="1.2s"/>
   </text>
 </svg>
