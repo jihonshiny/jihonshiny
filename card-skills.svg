@@ -22,7 +22,7 @@
     <circle cx="32" cy="12" r="6"/>
   </g>
 
-  <text x="55" y="35" font-family="Georgia, serif" font-size="16" fill="#c8b898" font-weight="600">toys i play with</text>
+  <text x="55" y="35" font-family="Georgia, serif" font-size="16" fill="#c8b898" font-weight="600">skills</text>
   <line x1="210" y1="30" x2="760" y2="30" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
 
   <!-- Skill bubbles - Row 1 -->
