@@ -1,516 +1,469 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1750" viewBox="0 0 900 1750">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="2300" viewBox="0 0 900 2300">
   <defs>
-    <!-- Sky gradient -->
     <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#070b1a"/>
-      <stop offset="40%" style="stop-color:#0c1225"/>
-      <stop offset="100%" style="stop-color:#111830"/>
+      <stop offset="0%" style="stop-color:#050816"/>
+      <stop offset="50%" style="stop-color:#0a1025"/>
+      <stop offset="100%" style="stop-color:#0f1530"/>
     </linearGradient>
 
-    <!-- Moon glow -->
     <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:rgba(255,230,160,0.2)"/>
+      <stop offset="0%" style="stop-color:rgba(255,230,160,0.25)"/>
       <stop offset="100%" style="stop-color:transparent"/>
     </radialGradient>
-    <radialGradient id="moonCore" cx="40%" cy="40%" r="50%">
+    <radialGradient id="moonCore" cx="38%" cy="38%" r="50%">
       <stop offset="0%" style="stop-color:#fff8e0"/>
-      <stop offset="60%" style="stop-color:#ffe69c"/>
+      <stop offset="55%" style="stop-color:#ffe69c"/>
       <stop offset="100%" style="stop-color:#ffd45000"/>
     </radialGradient>
 
-    <!-- Window light gradients -->
     <linearGradient id="warmLight" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffd78a"/>
-      <stop offset="100%" style="stop-color:#ffaa33"/>
+      <stop offset="0%" style="stop-color:#ffd78a"/><stop offset="100%" style="stop-color:#ffaa33"/>
     </linearGradient>
     <linearGradient id="coolLight" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#8ec8ff"/>
-      <stop offset="100%" style="stop-color:#5b9fe0"/>
+      <stop offset="0%" style="stop-color:#8ec8ff"/><stop offset="100%" style="stop-color:#5b9fe0"/>
     </linearGradient>
     <linearGradient id="whiteLight" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#e8efff"/>
-      <stop offset="100%" style="stop-color:#c0d4f0"/>
+      <stop offset="0%" style="stop-color:#e8efff"/><stop offset="100%" style="stop-color:#c0d4f0"/>
     </linearGradient>
 
-    <!-- Card gradient -->
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(255,215,138,0.08)"/>
-      <stop offset="50%" style="stop-color:rgba(255,255,255,0.03)"/>
-      <stop offset="100%" style="stop-color:rgba(142,200,255,0.06)"/>
-    </linearGradient>
-    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(255,215,138,0.25)">
-        <animate attributeName="stop-color" values="rgba(255,215,138,0.25);rgba(142,200,255,0.25);rgba(255,215,138,0.25)" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:rgba(142,200,255,0.25)">
-        <animate attributeName="stop-color" values="rgba(142,200,255,0.25);rgba(255,215,138,0.25);rgba(142,200,255,0.25)" dur="6s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-
-    <!-- Name card holographic -->
+    <!-- Holographic card -->
     <linearGradient id="holoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(255,200,120,0.12)">
-        <animate attributeName="stop-color" values="rgba(255,200,120,0.12);rgba(120,180,255,0.12);rgba(200,140,255,0.12);rgba(255,200,120,0.12)" dur="8s" repeatCount="indefinite"/>
+      <stop offset="0%" style="stop-color:rgba(255,200,120,0.10)">
+        <animate attributeName="stop-color" values="rgba(255,200,120,0.10);rgba(100,170,255,0.10);rgba(180,130,255,0.10);rgba(255,200,120,0.10)" dur="8s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="33%" style="stop-color:rgba(120,180,255,0.08)">
-        <animate attributeName="stop-color" values="rgba(120,180,255,0.08);rgba(200,140,255,0.08);rgba(255,200,120,0.08);rgba(120,180,255,0.08)" dur="8s" repeatCount="indefinite"/>
+      <stop offset="50%" style="stop-color:rgba(100,170,255,0.06)">
+        <animate attributeName="stop-color" values="rgba(100,170,255,0.06);rgba(180,130,255,0.06);rgba(255,200,120,0.06);rgba(100,170,255,0.06)" dur="8s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="66%" style="stop-color:rgba(200,140,255,0.06)">
-        <animate attributeName="stop-color" values="rgba(200,140,255,0.06);rgba(255,200,120,0.06);rgba(120,180,255,0.06);rgba(200,140,255,0.06)" dur="8s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:rgba(255,180,200,0.1)">
-        <animate attributeName="stop-color" values="rgba(255,180,200,0.1);rgba(255,200,120,0.1);rgba(120,180,255,0.1);rgba(255,180,200,0.1)" dur="8s" repeatCount="indefinite"/>
+      <stop offset="100%" style="stop-color:rgba(180,130,255,0.08)">
+        <animate attributeName="stop-color" values="rgba(180,130,255,0.08);rgba(255,200,120,0.08);rgba(100,170,255,0.08);rgba(180,130,255,0.08)" dur="8s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-
     <linearGradient id="holoBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(255,200,120,0.4)">
-        <animate attributeName="stop-color" values="rgba(255,200,120,0.4);rgba(120,180,255,0.4);rgba(200,140,255,0.4);rgba(255,200,120,0.4)" dur="5s" repeatCount="indefinite"/>
+      <stop offset="0%" style="stop-color:rgba(255,200,120,0.35)">
+        <animate attributeName="stop-color" values="rgba(255,200,120,0.35);rgba(100,170,255,0.35);rgba(180,130,255,0.35);rgba(255,200,120,0.35)" dur="5s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" style="stop-color:rgba(120,180,255,0.4)">
-        <animate attributeName="stop-color" values="rgba(120,180,255,0.4);rgba(200,140,255,0.4);rgba(255,200,120,0.4);rgba(120,180,255,0.4)" dur="5s" repeatCount="indefinite"/>
+      <stop offset="100%" style="stop-color:rgba(100,170,255,0.35)">
+        <animate attributeName="stop-color" values="rgba(100,170,255,0.35);rgba(180,130,255,0.35);rgba(255,200,120,0.35);rgba(100,170,255,0.35)" dur="5s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-
-    <!-- Shine sweep for holographic -->
     <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:transparent"/>
       <stop offset="45%" style="stop-color:transparent"/>
-      <stop offset="50%" style="stop-color:rgba(255,255,255,0.08)"/>
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.07)"/>
       <stop offset="55%" style="stop-color:transparent"/>
       <stop offset="100%" style="stop-color:transparent"/>
       <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="4s" repeatCount="indefinite"/>
     </linearGradient>
 
+    <!-- Section card -->
+    <linearGradient id="secBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,200,120,0.15)"/>
+      <stop offset="100%" style="stop-color:rgba(100,170,255,0.08)"/>
+    </linearGradient>
+
+    <!-- Project card glow -->
+    <linearGradient id="projBorder1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,200,120,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(255,200,120,0.04)"/>
+    </linearGradient>
+    <linearGradient id="projBorder2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(100,170,255,0.12)"/>
+      <stop offset="100%" style="stop-color:rgba(100,170,255,0.04)"/>
+    </linearGradient>
+
     <filter id="bigblur"><feGaussianBlur stdDeviation="25"/></filter>
     <filter id="medblur"><feGaussianBlur stdDeviation="8"/></filter>
-    <filter id="smblur"><feGaussianBlur stdDeviation="3"/></filter>
 
-    <!-- City reflection -->
-    <linearGradient id="reflGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:rgba(255,255,255,0.03)"/>
+    <linearGradient id="fline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:transparent"/>
+      <stop offset="30%" style="stop-color:rgba(255,200,120,0.15)"/>
+      <stop offset="70%" style="stop-color:rgba(100,170,255,0.15)"/>
       <stop offset="100%" style="stop-color:transparent"/>
     </linearGradient>
   </defs>
 
-  <!-- ============================================================ -->
-  <!-- BACKGROUND -->
-  <!-- ============================================================ -->
-  <rect width="900" height="1750" fill="#0c1020"/>
+  <!-- ============================================== -->
+  <!-- FULL BACKGROUND -->
+  <!-- ============================================== -->
+  <rect width="900" height="2300" fill="#0c1020"/>
 
-  <!-- ============================================================ -->
-  <!-- CITY NIGHT SCENE (0 - 520) -->
-  <!-- ============================================================ -->
-  <rect width="900" height="520" fill="url(#sky)"/>
+  <!-- ============================================== -->
+  <!-- CITY NIGHTSCAPE HEADER (0-550) -->
+  <!-- ============================================== -->
+  <rect width="900" height="550" fill="url(#sky)"/>
 
-  <!-- Stars (twinkling) -->
-  <circle cx="60" cy="30" r="1" fill="#fff" opacity="0.6"><animate attributeName="opacity" values="0.6;0.15;0.6" dur="3s" repeatCount="indefinite"/></circle>
-  <circle cx="155" cy="55" r="0.7" fill="#fff" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.2s" repeatCount="indefinite"/></circle>
-  <circle cx="280" cy="20" r="1.1" fill="#fff" opacity="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.7s" repeatCount="indefinite"/></circle>
-  <circle cx="350" cy="65" r="0.6" fill="#fff" opacity="0.35"/>
-  <circle cx="430" cy="15" r="0.9" fill="#fff" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="5s" repeatCount="indefinite"/></circle>
-  <circle cx="520" cy="45" r="0.8" fill="#fff" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3.5s" repeatCount="indefinite"/></circle>
-  <circle cx="610" cy="25" r="1" fill="#fff" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.8s" repeatCount="indefinite"/></circle>
-  <circle cx="690" cy="58" r="0.5" fill="#fff" opacity="0.3"/>
-  <circle cx="810" cy="35" r="0.7" fill="#fff" opacity="0.5"><animate attributeName="opacity" values="0.5;0.15;0.5" dur="3.8s" repeatCount="indefinite"/></circle>
-  <circle cx="870" cy="18" r="0.6" fill="#fff" opacity="0.4"/>
-  <circle cx="140" cy="88" r="0.5" fill="#fff" opacity="0.3"><animate attributeName="opacity" values="0.3;0.1;0.3" dur="6s" repeatCount="indefinite"/></circle>
-  <circle cx="480" cy="78" r="0.7" fill="#fff" opacity="0.45"/>
-  <circle cx="760" cy="72" r="0.6" fill="#fff" opacity="0.35"><animate attributeName="opacity" values="0.35;0.1;0.35" dur="5.5s" repeatCount="indefinite"/></circle>
+  <!-- Stars -->
+  <circle cx="55" cy="28" r="1" fill="#fff" opacity="0.6"><animate attributeName="opacity" values="0.6;0.15;0.6" dur="3s" repeatCount="indefinite"/></circle>
+  <circle cx="150" cy="52" r="0.7" fill="#fff" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.2s" repeatCount="indefinite"/></circle>
+  <circle cx="275" cy="18" r="1.1" fill="#fff" opacity="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.7s" repeatCount="indefinite"/></circle>
+  <circle cx="345" cy="60" r="0.6" fill="#fff" opacity="0.35"/>
+  <circle cx="425" cy="13" r="0.9" fill="#fff" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="5s" repeatCount="indefinite"/></circle>
+  <circle cx="515" cy="42" r="0.8" fill="#fff" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="3.5s" repeatCount="indefinite"/></circle>
+  <circle cx="605" cy="22" r="1" fill="#fff" opacity="0.4"><animate attributeName="opacity" values="0.4;0.1;0.4" dur="4.8s" repeatCount="indefinite"/></circle>
+  <circle cx="685" cy="55" r="0.5" fill="#fff" opacity="0.3"/>
+  <circle cx="805" cy="32" r="0.7" fill="#fff" opacity="0.5"><animate attributeName="opacity" values="0.5;0.15;0.5" dur="3.8s" repeatCount="indefinite"/></circle>
+  <circle cx="865" cy="16" r="0.6" fill="#fff" opacity="0.4"/>
+  <circle cx="135" cy="85" r="0.5" fill="#fff" opacity="0.3"><animate attributeName="opacity" values="0.3;0.1;0.3" dur="6s" repeatCount="indefinite"/></circle>
+  <circle cx="475" cy="75" r="0.7" fill="#fff" opacity="0.45"/>
+  <circle cx="755" cy="68" r="0.6" fill="#fff" opacity="0.35"><animate attributeName="opacity" values="0.35;0.1;0.35" dur="5.5s" repeatCount="indefinite"/></circle>
+  <circle cx="38" cy="72" r="0.8" fill="#fff" opacity="0.5"/>
+  <circle cx="580" cy="80" r="0.5" fill="#fff" opacity="0.3"/>
+  <circle cx="840" cy="65" r="0.9" fill="#fff" opacity="0.4"><animate attributeName="opacity" values="0.4;0.15;0.4" dur="4s" repeatCount="indefinite"/></circle>
 
-  <!-- Moon + glow -->
-  <ellipse cx="720" cy="90" rx="90" ry="90" fill="url(#moonGlow)" filter="url(#bigblur)"/>
-  <circle cx="720" cy="90" r="35" fill="url(#moonCore)" opacity="0.95"/>
-  <!-- Moon craters -->
-  <circle cx="710" cy="80" r="5" fill="rgba(220,190,120,0.15)"/>
-  <circle cx="728" cy="100" r="3" fill="rgba(220,190,120,0.1)"/>
-  <circle cx="705" cy="95" r="2.5" fill="rgba(220,190,120,0.12)"/>
+  <!-- Moon -->
+  <ellipse cx="730" cy="85" rx="95" ry="95" fill="url(#moonGlow)" filter="url(#bigblur)"/>
+  <circle cx="730" cy="85" r="38" fill="url(#moonCore)" opacity="0.95"/>
+  <circle cx="718" cy="74" r="5.5" fill="rgba(220,190,120,0.13)"/>
+  <circle cx="738" cy="96" r="3.5" fill="rgba(220,190,120,0.1)"/>
+  <circle cx="714" cy="92" r="2.8" fill="rgba(220,190,120,0.11)"/>
 
-  <!-- ============================================================ -->
-  <!-- CITY BUILDINGS -->
-  <!-- ============================================================ -->
+  <!-- Buildings -->
+  <rect x="0" y="280" width="55" height="270" rx="1" fill="#080d1c"/>
+  <rect x="58" y="245" width="75" height="305" rx="1" fill="#091020"/>
+  <rect x="138" y="295" width="48" height="255" rx="1" fill="#070c1a"/>
+  <rect x="190" y="220" width="65" height="330" rx="1" fill="#0a1122"/>
+  <rect x="260" y="265" width="52" height="285" rx="1" fill="#080d1c"/>
+  <rect x="316" y="200" width="80" height="350" rx="1" fill="#091121"/>
+  <rect x="400" y="285" width="58" height="265" rx="1" fill="#070c1a"/>
+  <rect x="462" y="235" width="68" height="315" rx="1" fill="#0a1224"/>
+  <rect x="534" y="255" width="50" height="295" rx="1" fill="#080d1c"/>
+  <rect x="588" y="210" width="76" height="340" rx="1" fill="#091020"/>
+  <rect x="668" y="275" width="52" height="275" rx="1" fill="#070c1a"/>
+  <rect x="724" y="250" width="62" height="300" rx="1" fill="#0a1122"/>
+  <rect x="790" y="280" width="58" height="270" rx="1" fill="#080d1c"/>
+  <rect x="852" y="230" width="48" height="320" rx="1" fill="#091121"/>
 
-  <!-- Far buildings (darker, background) -->
-  <rect x="0" y="260" width="52" height="260" rx="2" fill="#0a0f1e"/>
-  <rect x="55" y="230" width="70" height="290" rx="2" fill="#0b1020"/>
-  <rect x="130" y="280" width="45" height="240" rx="2" fill="#090e1c"/>
-  <rect x="180" y="210" width="60" height="310" rx="2" fill="#0c1122"/>
-  <rect x="245" y="250" width="50" height="270" rx="2" fill="#0a0f1e"/>
-  <rect x="300" y="190" width="75" height="330" rx="2" fill="#0b1121"/>
-  <rect x="380" y="270" width="55" height="250" rx="2" fill="#090e1c"/>
-  <rect x="440" y="220" width="65" height="300" rx="2" fill="#0c1224"/>
-  <rect x="510" y="240" width="48" height="280" rx="2" fill="#0a0f1e"/>
-  <rect x="563" y="200" width="72" height="320" rx="2" fill="#0b1020"/>
-  <rect x="640" y="260" width="50" height="260" rx="2" fill="#090e1c"/>
-  <rect x="695" y="235" width="60" height="285" rx="2" fill="#0c1122"/>
-  <rect x="760" y="270" width="55" height="250" rx="2" fill="#0a0f1e"/>
-  <rect x="820" y="220" width="80" height="300" rx="2" fill="#0b1121"/>
+  <!-- Windows - building 58 -->
+  <rect x="66" y="260" width="7" height="9" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="8s" repeatCount="indefinite"/></rect>
+  <rect x="80" y="260" width="7" height="9" fill="url(#coolLight)" opacity="0.5"/>
+  <rect x="94" y="260" width="7" height="9" fill="url(#warmLight)" opacity="0.6"/>
+  <rect x="108" y="260" width="7" height="9" fill="url(#whiteLight)" opacity="0.3"/>
+  <rect x="66" y="278" width="7" height="9" fill="url(#coolLight)" opacity="0.4"><animate attributeName="opacity" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite"/></rect>
+  <rect x="80" y="278" width="7" height="9" fill="url(#warmLight)" opacity="0.8"/>
+  <rect x="94" y="278" width="7" height="9" fill="url(#whiteLight)" opacity="0.3"/>
+  <rect x="108" y="278" width="7" height="9" fill="url(#warmLight)" opacity="0.5"/>
+  <rect x="66" y="296" width="7" height="9" fill="url(#warmLight)" opacity="0.5"/>
+  <rect x="80" y="296" width="7" height="9" fill="url(#warmLight)" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="10s" repeatCount="indefinite"/></rect>
+  <rect x="94" y="296" width="7" height="9" fill="url(#coolLight)" opacity="0.4"/>
+  <rect x="108" y="296" width="7" height="9" fill="url(#warmLight)" opacity="0.7"/>
+  <rect x="66" y="314" width="7" height="9" fill="url(#whiteLight)" opacity="0.3"/>
+  <rect x="80" y="314" width="7" height="9" fill="url(#coolLight)" opacity="0.5"/>
+  <rect x="94" y="314" width="7" height="9" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.4;0.7" dur="7s" repeatCount="indefinite"/></rect>
 
-  <!-- Building windows (animated lights) -->
-  <!-- Building at x=55 -->
-  <rect x="62" y="245" width="6" height="8" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="8s" repeatCount="indefinite"/></rect>
-  <rect x="75" y="245" width="6" height="8" fill="url(#coolLight)" opacity="0.5"/>
-  <rect x="88" y="245" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
-  <rect x="62" y="260" width="6" height="8" fill="url(#coolLight)" opacity="0.4"><animate attributeName="opacity" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite"/></rect>
-  <rect x="75" y="260" width="6" height="8" fill="url(#warmLight)" opacity="0.8"/>
-  <rect x="88" y="260" width="6" height="8" fill="url(#whiteLight)" opacity="0.3"/>
-  <rect x="62" y="275" width="6" height="8" fill="url(#warmLight)" opacity="0.5"/>
-  <rect x="75" y="275" width="6" height="8" fill="url(#warmLight)" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="10s" repeatCount="indefinite"/></rect>
-  <rect x="88" y="275" width="6" height="8" fill="url(#coolLight)" opacity="0.4"/>
-  <rect x="62" y="290" width="6" height="8" fill="url(#whiteLight)" opacity="0.3"/>
-  <rect x="75" y="290" width="6" height="8" fill="url(#coolLight)" opacity="0.5"/>
-  <rect x="88" y="290" width="6" height="8" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.4;0.7" dur="7s" repeatCount="indefinite"/></rect>
+  <!-- Windows - building 190 -->
+  <rect x="198" y="238" width="7" height="9" fill="url(#coolLight)" opacity="0.6"/>
+  <rect x="212" y="238" width="7" height="9" fill="url(#warmLight)" opacity="0.8"><animate attributeName="opacity" values="0.8;0.3;0.8" dur="9s" repeatCount="indefinite"/></rect>
+  <rect x="226" y="238" width="7" height="9" fill="url(#warmLight)" opacity="0.5"/>
+  <rect x="240" y="238" width="7" height="9" fill="url(#coolLight)" opacity="0.4"/>
+  <rect x="198" y="256" width="7" height="9" fill="url(#warmLight)" opacity="0.7"/>
+  <rect x="212" y="256" width="7" height="9" fill="url(#whiteLight)" opacity="0.3"><animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/></rect>
+  <rect x="226" y="256" width="7" height="9" fill="url(#coolLight)" opacity="0.6"/>
+  <rect x="240" y="256" width="7" height="9" fill="url(#warmLight)" opacity="0.5"/>
+  <rect x="198" y="274" width="7" height="9" fill="url(#warmLight)" opacity="0.4"/>
+  <rect x="212" y="274" width="7" height="9" fill="url(#warmLight)" opacity="0.6"/>
+  <rect x="226" y="274" width="7" height="9" fill="url(#warmLight)" opacity="0.8"><animate attributeName="opacity" values="0.8;0.4;0.8" dur="11s" repeatCount="indefinite"/></rect>
+  <rect x="240" y="274" width="7" height="9" fill="url(#coolLight)" opacity="0.3"/>
 
-  <!-- Building at x=180 -->
-  <rect x="188" y="225" width="6" height="8" fill="url(#coolLight)" opacity="0.6"/>
-  <rect x="200" y="225" width="6" height="8" fill="url(#warmLight)" opacity="0.8"><animate attributeName="opacity" values="0.8;0.3;0.8" dur="9s" repeatCount="indefinite"/></rect>
-  <rect x="212" y="225" width="6" height="8" fill="url(#warmLight)" opacity="0.5"/>
-  <rect x="224" y="225" width="6" height="8" fill="url(#coolLight)" opacity="0.4"/>
-  <rect x="188" y="240" width="6" height="8" fill="url(#warmLight)" opacity="0.7"/>
-  <rect x="200" y="240" width="6" height="8" fill="url(#whiteLight)" opacity="0.3"><animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite"/></rect>
-  <rect x="212" y="240" width="6" height="8" fill="url(#coolLight)" opacity="0.6"/>
-  <rect x="224" y="240" width="6" height="8" fill="url(#warmLight)" opacity="0.5"/>
-  <rect x="188" y="255" width="6" height="8" fill="url(#warmLight)" opacity="0.4"/>
-  <rect x="200" y="255" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
-  <rect x="212" y="255" width="6" height="8" fill="url(#warmLight)" opacity="0.8"><animate attributeName="opacity" values="0.8;0.4;0.8" dur="11s" repeatCount="indefinite"/></rect>
-  <rect x="224" y="255" width="6" height="8" fill="url(#coolLight)" opacity="0.3"/>
-  <rect x="188" y="270" width="6" height="8" fill="url(#coolLight)" opacity="0.5"/>
-  <rect x="200" y="270" width="6" height="8" fill="url(#warmLight)" opacity="0.7"/>
-  <rect x="212" y="270" width="6" height="8" fill="url(#whiteLight)" opacity="0.4"><animate attributeName="opacity" values="0.4;0.7;0.4" dur="7s" repeatCount="indefinite"/></rect>
-  <rect x="224" y="270" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
+  <!-- Windows - building 316 (tall) -->
+  <rect x="326" y="218" width="7" height="9" fill="url(#warmLight)" opacity="0.9"><animate attributeName="opacity" values="0.9;0.4;0.9" dur="6s" repeatCount="indefinite"/></rect>
+  <rect x="340" y="218" width="7" height="9" fill="url(#coolLight)" opacity="0.5"/>
+  <rect x="354" y="218" width="7" height="9" fill="url(#warmLight)" opacity="0.6"/>
+  <rect x="368" y="218" width="7" height="9" fill="url(#whiteLight)" opacity="0.4"/>
+  <rect x="382" y="218" width="7" height="9" fill="url(#warmLight)" opacity="0.7"/>
+  <rect x="326" y="236" width="7" height="9" fill="url(#coolLight)" opacity="0.4"/>
+  <rect x="340" y="236" width="7" height="9" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="8s" repeatCount="indefinite"/></rect>
+  <rect x="354" y="236" width="7" height="9" fill="url(#warmLight)" opacity="0.5"/>
+  <rect x="368" y="236" width="7" height="9" fill="url(#coolLight)" opacity="0.6"/>
+  <rect x="382" y="236" width="7" height="9" fill="url(#warmLight)" opacity="0.3"/>
+  <rect x="326" y="254" width="7" height="9" fill="url(#warmLight)" opacity="0.6"/>
+  <rect x="340" y="254" width="7" height="9" fill="url(#warmLight)" opacity="0.8"/>
+  <rect x="354" y="254" width="7" height="9" fill="url(#coolLight)" opacity="0.3"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="12s" repeatCount="indefinite"/></rect>
+  <rect x="368" y="254" width="7" height="9" fill="url(#warmLight)" opacity="0.5"/>
+  <rect x="382" y="254" width="7" height="9" fill="url(#whiteLight)" opacity="0.4"/>
+  <rect x="326" y="272" width="7" height="9" fill="url(#whiteLight)" opacity="0.4"/>
+  <rect x="340" y="272" width="7" height="9" fill="url(#coolLight)" opacity="0.6"/>
+  <rect x="354" y="272" width="7" height="9" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="9s" repeatCount="indefinite"/></rect>
+  <rect x="368" y="272" width="7" height="9" fill="url(#warmLight)" opacity="0.4"/>
 
-  <!-- Building at x=300 (tall) -->
-  <rect x="310" y="205" width="6" height="8" fill="url(#warmLight)" opacity="0.9"><animate attributeName="opacity" values="0.9;0.4;0.9" dur="6s" repeatCount="indefinite"/></rect>
-  <rect x="323" y="205" width="6" height="8" fill="url(#coolLight)" opacity="0.5"/>
-  <rect x="336" y="205" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
-  <rect x="349" y="205" width="6" height="8" fill="url(#whiteLight)" opacity="0.4"/>
-  <rect x="310" y="220" width="6" height="8" fill="url(#coolLight)" opacity="0.4"/>
-  <rect x="323" y="220" width="6" height="8" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="8s" repeatCount="indefinite"/></rect>
-  <rect x="336" y="220" width="6" height="8" fill="url(#warmLight)" opacity="0.5"/>
-  <rect x="349" y="220" width="6" height="8" fill="url(#coolLight)" opacity="0.6"/>
-  <rect x="310" y="235" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
-  <rect x="323" y="235" width="6" height="8" fill="url(#warmLight)" opacity="0.8"/>
-  <rect x="336" y="235" width="6" height="8" fill="url(#coolLight)" opacity="0.3"><animate attributeName="opacity" values="0.3;0.7;0.3" dur="12s" repeatCount="indefinite"/></rect>
-  <rect x="349" y="235" width="6" height="8" fill="url(#warmLight)" opacity="0.5"/>
-  <rect x="310" y="250" width="6" height="8" fill="url(#whiteLight)" opacity="0.4"/>
-  <rect x="323" y="250" width="6" height="8" fill="url(#coolLight)" opacity="0.6"/>
-  <rect x="336" y="250" width="6" height="8" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="9s" repeatCount="indefinite"/></rect>
-  <rect x="349" y="250" width="6" height="8" fill="url(#warmLight)" opacity="0.4"/>
+  <!-- Windows - building 462 -->
+  <rect x="472" y="252" width="7" height="9" fill="url(#warmLight)" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="7s" repeatCount="indefinite"/></rect>
+  <rect x="486" y="252" width="7" height="9" fill="url(#coolLight)" opacity="0.5"/>
+  <rect x="500" y="252" width="7" height="9" fill="url(#warmLight)" opacity="0.8"/>
+  <rect x="514" y="252" width="7" height="9" fill="url(#warmLight)" opacity="0.4"/>
+  <rect x="472" y="270" width="7" height="9" fill="url(#coolLight)" opacity="0.7"/>
+  <rect x="486" y="270" width="7" height="9" fill="url(#warmLight)" opacity="0.5"><animate attributeName="opacity" values="0.5;0.8;0.5" dur="10s" repeatCount="indefinite"/></rect>
+  <rect x="500" y="270" width="7" height="9" fill="url(#whiteLight)" opacity="0.3"/>
+  <rect x="514" y="270" width="7" height="9" fill="url(#warmLight)" opacity="0.6"/>
 
-  <!-- Building at x=440 -->
-  <rect x="450" y="235" width="6" height="8" fill="url(#warmLight)" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="7s" repeatCount="indefinite"/></rect>
-  <rect x="462" y="235" width="6" height="8" fill="url(#coolLight)" opacity="0.5"/>
-  <rect x="474" y="235" width="6" height="8" fill="url(#warmLight)" opacity="0.8"/>
-  <rect x="486" y="235" width="6" height="8" fill="url(#warmLight)" opacity="0.4"/>
-  <rect x="450" y="250" width="6" height="8" fill="url(#coolLight)" opacity="0.7"/>
-  <rect x="462" y="250" width="6" height="8" fill="url(#warmLight)" opacity="0.5"><animate attributeName="opacity" values="0.5;0.8;0.5" dur="10s" repeatCount="indefinite"/></rect>
-  <rect x="474" y="250" width="6" height="8" fill="url(#whiteLight)" opacity="0.3"/>
-  <rect x="486" y="250" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
-  <rect x="450" y="265" width="6" height="8" fill="url(#warmLight)" opacity="0.5"/>
-  <rect x="462" y="265" width="6" height="8" fill="url(#warmLight)" opacity="0.7"/>
-  <rect x="474" y="265" width="6" height="8" fill="url(#coolLight)" opacity="0.4"><animate attributeName="opacity" values="0.4;0.7;0.4" dur="8s" repeatCount="indefinite"/></rect>
-  <rect x="486" y="265" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
+  <!-- Windows - building 588 -->
+  <rect x="598" y="228" width="7" height="9" fill="url(#warmLight)" opacity="0.7"/>
+  <rect x="612" y="228" width="7" height="9" fill="url(#coolLight)" opacity="0.5"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="6s" repeatCount="indefinite"/></rect>
+  <rect x="626" y="228" width="7" height="9" fill="url(#warmLight)" opacity="0.6"/>
+  <rect x="640" y="228" width="7" height="9" fill="url(#warmLight)" opacity="0.8"/>
+  <rect x="598" y="246" width="7" height="9" fill="url(#warmLight)" opacity="0.4"/>
+  <rect x="612" y="246" width="7" height="9" fill="url(#warmLight)" opacity="0.9"><animate attributeName="opacity" values="0.9;0.5;0.9" dur="7s" repeatCount="indefinite"/></rect>
+  <rect x="626" y="246" width="7" height="9" fill="url(#coolLight)" opacity="0.3"/>
+  <rect x="640" y="246" width="7" height="9" fill="url(#whiteLight)" opacity="0.5"/>
+  <rect x="598" y="264" width="7" height="9" fill="url(#coolLight)" opacity="0.6"/>
+  <rect x="612" y="264" width="7" height="9" fill="url(#warmLight)" opacity="0.5"/>
+  <rect x="626" y="264" width="7" height="9" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="11s" repeatCount="indefinite"/></rect>
+  <rect x="640" y="264" width="7" height="9" fill="url(#coolLight)" opacity="0.4"/>
 
-  <!-- Building at x=563 -->
-  <rect x="573" y="215" width="6" height="8" fill="url(#warmLight)" opacity="0.7"/>
-  <rect x="585" y="215" width="6" height="8" fill="url(#coolLight)" opacity="0.5"><animate attributeName="opacity" values="0.5;0.2;0.5" dur="6s" repeatCount="indefinite"/></rect>
-  <rect x="597" y="215" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
-  <rect x="609" y="215" width="6" height="8" fill="url(#warmLight)" opacity="0.8"/>
-  <rect x="573" y="230" width="6" height="8" fill="url(#warmLight)" opacity="0.4"/>
-  <rect x="585" y="230" width="6" height="8" fill="url(#warmLight)" opacity="0.9"><animate attributeName="opacity" values="0.9;0.5;0.9" dur="7s" repeatCount="indefinite"/></rect>
-  <rect x="597" y="230" width="6" height="8" fill="url(#coolLight)" opacity="0.3"/>
-  <rect x="609" y="230" width="6" height="8" fill="url(#whiteLight)" opacity="0.5"/>
-  <rect x="573" y="245" width="6" height="8" fill="url(#coolLight)" opacity="0.6"/>
-  <rect x="585" y="245" width="6" height="8" fill="url(#warmLight)" opacity="0.5"/>
-  <rect x="597" y="245" width="6" height="8" fill="url(#warmLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="11s" repeatCount="indefinite"/></rect>
-  <rect x="609" y="245" width="6" height="8" fill="url(#coolLight)" opacity="0.4"/>
+  <!-- Windows - building 852 -->
+  <rect x="858" y="248" width="7" height="9" fill="url(#warmLight)" opacity="0.6"/>
+  <rect x="870" y="248" width="7" height="9" fill="url(#coolLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="8s" repeatCount="indefinite"/></rect>
+  <rect x="882" y="248" width="7" height="9" fill="url(#warmLight)" opacity="0.5"/>
+  <rect x="858" y="266" width="7" height="9" fill="url(#warmLight)" opacity="0.4"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="9s" repeatCount="indefinite"/></rect>
+  <rect x="870" y="266" width="7" height="9" fill="url(#whiteLight)" opacity="0.3"/>
+  <rect x="882" y="266" width="7" height="9" fill="url(#coolLight)" opacity="0.6"/>
 
-  <!-- Building at x=820 -->
-  <rect x="830" y="235" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
-  <rect x="842" y="235" width="6" height="8" fill="url(#coolLight)" opacity="0.7"><animate attributeName="opacity" values="0.7;0.3;0.7" dur="8s" repeatCount="indefinite"/></rect>
-  <rect x="854" y="235" width="6" height="8" fill="url(#warmLight)" opacity="0.5"/>
-  <rect x="866" y="235" width="6" height="8" fill="url(#warmLight)" opacity="0.8"/>
-  <rect x="830" y="250" width="6" height="8" fill="url(#warmLight)" opacity="0.4"><animate attributeName="opacity" values="0.4;0.8;0.4" dur="9s" repeatCount="indefinite"/></rect>
-  <rect x="842" y="250" width="6" height="8" fill="url(#whiteLight)" opacity="0.3"/>
-  <rect x="854" y="250" width="6" height="8" fill="url(#coolLight)" opacity="0.6"/>
-  <rect x="866" y="250" width="6" height="8" fill="url(#warmLight)" opacity="0.7"/>
-  <rect x="830" y="265" width="6" height="8" fill="url(#warmLight)" opacity="0.5"/>
-  <rect x="842" y="265" width="6" height="8" fill="url(#warmLight)" opacity="0.6"/>
-  <rect x="854" y="265" width="6" height="8" fill="url(#warmLight)" opacity="0.8"><animate attributeName="opacity" values="0.8;0.4;0.8" dur="7s" repeatCount="indefinite"/></rect>
-  <rect x="866" y="265" width="6" height="8" fill="url(#coolLight)" opacity="0.4"/>
+  <!-- City ambient glow -->
+  <rect x="0" y="370" width="900" height="180" fill="rgba(255,200,120,0.02)" filter="url(#bigblur)"/>
 
-  <!-- City glow (ambient light pollution) -->
-  <rect x="0" y="350" width="900" height="170" fill="rgba(255,200,120,0.02)" filter="url(#bigblur)"/>
+  <!-- Beacon lights -->
+  <circle cx="95" cy="245" r="2" fill="#ff3333" opacity="0.6"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite"/></circle>
+  <circle cx="356" cy="200" r="2" fill="#ff3333" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2s" repeatCount="indefinite" begin="1s"/></circle>
+  <circle cx="626" cy="210" r="2" fill="#ff3333" opacity="0.6"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite" begin="0.5s"/></circle>
+  <circle cx="876" cy="230" r="2" fill="#ff3333" opacity="0.5"><animate attributeName="opacity" values="0.5;0.1;0.5" dur="2s" repeatCount="indefinite" begin="1.5s"/></circle>
 
-  <!-- Building rooftop lights (red beacon lights) -->
-  <circle cx="90" cy="230" r="2" fill="#ff3333" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="337" cy="190" r="2" fill="#ff3333" opacity="0.5">
-    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2s" repeatCount="indefinite" begin="1s"/>
-  </circle>
-  <circle cx="599" cy="200" r="2" fill="#ff3333" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite" begin="0.5s"/>
-  </circle>
-  <circle cx="860" cy="220" r="2" fill="#ff3333" opacity="0.5">
-    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="2s" repeatCount="indefinite" begin="1.5s"/>
-  </circle>
+  <!-- Window frame -->
+  <rect x="0" y="500" width="900" height="50" fill="#0c1020"/>
+  <line x1="0" y1="500" x2="900" y2="500" stroke="rgba(255,200,120,0.05)" stroke-width="1"/>
+  <line x1="450" y1="0" x2="450" y2="500" stroke="rgba(255,255,255,0.025)" stroke-width="2"/>
+  <line x1="0" y1="250" x2="900" y2="250" stroke="rgba(255,255,255,0.015)" stroke-width="1.5"/>
 
-  <!-- ============================================================ -->
-  <!-- WINDOW FRAME OVERLAY -->
-  <!-- ============================================================ -->
-  <!-- Window sill / desk area -->
-  <rect x="0" y="480" width="900" height="40" fill="#0e1220"/>
-  <line x1="0" y1="480" x2="900" y2="480" stroke="rgba(255,200,120,0.06)" stroke-width="1"/>
-
-  <!-- Window frame lines -->
-  <line x1="450" y1="0" x2="450" y2="480" stroke="rgba(255,255,255,0.03)" stroke-width="2"/>
-  <line x1="0" y1="240" x2="900" y2="240" stroke="rgba(255,255,255,0.02)" stroke-width="1.5"/>
-
-  <!-- Subtle window reflection -->
-  <rect x="0" y="0" width="900" height="480" fill="url(#reflGrad)" opacity="0.3"/>
-
-  <!-- ============================================================ -->
-  <!-- TEXT ON SCENE -->
-  <!-- ============================================================ -->
-  <text x="450" y="380" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#e8e0d4" letter-spacing="3" opacity="0">
+  <!-- Header text -->
+  <text x="450" y="395" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="700" fill="#e8e0d4" letter-spacing="3" opacity="0">
     jihonshiny
     <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze" begin="0.5s"/>
   </text>
-
-  <text x="450" y="420" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#8b8578" letter-spacing="5" opacity="0">
+  <text x="450" y="440" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" fill="#9e9588" letter-spacing="6" opacity="0">
     FRONTEND DEVELOPER
-    <animate attributeName="opacity" values="0;0.8" dur="2s" fill="freeze" begin="1s"/>
+    <animate attributeName="opacity" values="0;0.9" dur="2s" fill="freeze" begin="1s"/>
   </text>
-
-  <text x="450" y="455" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#5a5548" font-style="italic" opacity="0">
+  <text x="450" y="475" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#6a6258" font-style="italic" opacity="0">
     coding by the window, under the moonlight
-    <animate attributeName="opacity" values="0;0.6" dur="2s" fill="freeze" begin="1.5s"/>
+    <animate attributeName="opacity" values="0;0.7" dur="2s" fill="freeze" begin="1.5s"/>
   </text>
 
-  <!-- ============================================================ -->
-  <!-- HOLOGRAPHIC BUSINESS CARD SECTION (540 - 820) -->
-  <!-- ============================================================ -->
-  <rect x="0" y="520" width="900" height="320" fill="#0c1020"/>
+  <!-- ============================================== -->
+  <!-- HOLOGRAPHIC BUSINESS CARD (560-870) -->
+  <!-- ============================================== -->
 
-  <!-- Card -->
-  <rect x="100" y="555" width="700" height="260" rx="20" fill="#0e1220"/>
-  <rect x="100" y="555" width="700" height="260" rx="20" fill="url(#holoGrad)"/>
-  <rect x="100" y="555" width="700" height="260" rx="20" fill="url(#shine)"/>
-  <rect x="100" y="555" width="700" height="260" rx="20" fill="none" stroke="url(#holoBorder)" stroke-width="1"/>
+  <!-- Card shadow -->
+  <rect x="90" y="585" width="720" height="265" rx="22" fill="rgba(0,0,0,0.3)" filter="url(#medblur)"/>
 
-  <!-- Holographic shimmer line -->
-  <line x1="100" y1="635" x2="800" y2="635" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/>
+  <!-- Card body -->
+  <rect x="90" y="580" width="720" height="265" rx="20" fill="#0a0e1c"/>
+  <rect x="90" y="580" width="720" height="265" rx="20" fill="url(#holoGrad)"/>
+  <rect x="90" y="580" width="720" height="265" rx="20" fill="url(#shine)"/>
+  <rect x="90" y="580" width="720" height="265" rx="20" fill="none" stroke="url(#holoBorder)" stroke-width="1"/>
 
-  <!-- Card content - Left side -->
-  <!-- Paw icon -->
-  <g transform="translate(140, 592) scale(0.8)" fill="rgba(255,200,120,0.4)">
-    <ellipse cx="0" cy="0" rx="6" ry="8"/>
-    <circle cx="-6" cy="-9" r="3.5"/>
-    <circle cx="0" cy="-12" r="3.5"/>
-    <circle cx="6" cy="-9" r="3.5"/>
-  </g>
+  <!-- Card top glow -->
+  <ellipse cx="450" cy="580" rx="200" ry="4" fill="rgba(255,200,120,0.06)" filter="url(#medblur)"/>
 
-  <text x="162" y="598" font-family="Georgia, serif" font-size="22" fill="#e8e0d4" font-weight="600" letter-spacing="1">&#xbe5b;&#xb098;</text>
-  <text x="230" y="598" font-family="'Courier New', monospace" font-size="11" fill="#5a5548" letter-spacing="2">jihonshiny</text>
+  <!-- Card divider -->
+  <line x1="120" y1="660" x2="780" y2="660" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
 
-  <text x="140" y="625" font-family="'Courier New', monospace" font-size="11" fill="#8b8578" letter-spacing="1">Frontend Developer / High School Student</text>
+  <!-- Name -->
+  <text x="130" y="625" font-family="Georgia, serif" font-size="28" fill="#e8e0d4" font-weight="700" letter-spacing="1">&#xbe5b;&#xb098;</text>
+  <text x="215" y="625" font-family="'Courier New', monospace" font-size="14" fill="#6a6258" letter-spacing="2">jihonshiny</text>
 
-  <!-- Info items -->
-  <text x="140" y="665" font-family="'Courier New', monospace" font-size="11">
-    <tspan fill="#5a5548">breed</tspan>
-    <tspan fill="#3a3530"> .... </tspan>
-    <tspan fill="#c8b898">&#xac80;&#xc815; &#xd3ec;&#xba54;&#xb77c;&#xb2c8;&#xc548; (with glasses)</tspan>
-  </text>
+  <!-- Role -->
+  <text x="130" y="650" font-family="'Courier New', monospace" font-size="14" fill="#9e9588" letter-spacing="1">Frontend Developer / High School Student</text>
 
-  <text x="140" y="690" font-family="'Courier New', monospace" font-size="11">
-    <tspan fill="#5a5548">skills</tspan>
-    <tspan fill="#3a3530"> ... </tspan>
-    <tspan fill="#c8b898">sitting cute, writing code, debugging</tspan>
-  </text>
+  <!-- Info - bigger, more readable -->
+  <text x="130" y="695" font-family="'Courier New', monospace" font-size="14" fill="#c8b898">&#xc6f9; &#xd504;&#xb860;&#xd2b8;&#xc5d4;&#xb4dc; &#xac1c;&#xbc1c;&#xc744; &#xc88b;&#xc544;&#xd558;&#xb294; &#xace0;&#xb4f1;&#xd559;&#xc0dd;&#xc785;&#xb2c8;&#xb2e4;.</text>
 
-  <text x="140" y="715" font-family="'Courier New', monospace" font-size="11">
-    <tspan fill="#5a5548">loves</tspan>
-    <tspan fill="#3a3530"> .... </tspan>
-    <tspan fill="#c8b898">treats, belly rubs, clean code</tspan>
-  </text>
+  <text x="130" y="722" font-family="'Courier New', monospace" font-size="14" fill="#c8b898">React, Flutter, Node.js &#xb4f1; &#xb2e4;&#xc591;&#xd55c; &#xae30;&#xc220;&#xb85c;</text>
 
-  <text x="140" y="740" font-family="'Courier New', monospace" font-size="11">
-    <tspan fill="#5a5548">status</tspan>
-    <tspan fill="#3a3530"> ... </tspan>
-    <tspan fill="#c8b898">sniffing around new tech</tspan>
-  </text>
+  <text x="130" y="749" font-family="'Courier New', monospace" font-size="14" fill="#c8b898">&#xc0ac;&#xc6a9;&#xc790; &#xc911;&#xc2ec;&#xc758; &#xc11c;&#xbe44;&#xc2a4;&#xb97c; &#xb9cc;&#xb4ed;&#xb2c8;&#xb2e4;.</text>
+
+  <!-- Contact in card -->
+  <text x="130" y="790" font-family="'Courier New', monospace" font-size="12" fill="#6a6258">github.com/jihonshiny</text>
+
+  <text x="130" y="812" font-family="'Courier New', monospace" font-size="12" fill="#6a6258">your-email@example.com</text>
 
   <!-- Blinking cursor -->
-  <rect x="385" y="728" width="7" height="14" fill="#ffc878" rx="1">
+  <rect x="310" y="800" width="8" height="14" fill="#ffc878" rx="1">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Card right side - decorative paw watermark -->
-  <g transform="translate(680, 720) scale(2.5)" fill="rgba(255,200,120,0.04)">
+  <!-- Paw watermark -->
+  <g transform="translate(680, 750) scale(2.8)" fill="rgba(255,200,120,0.03)">
     <ellipse cx="0" cy="0" rx="10" ry="13"/>
-    <circle cx="-10" cy="-14" r="6"/>
-    <circle cx="0" cy="-18" r="6"/>
-    <circle cx="10" cy="-14" r="6"/>
+    <circle cx="-10" cy="-14" r="6"/><circle cx="0" cy="-18" r="6"/><circle cx="10" cy="-14" r="6"/>
   </g>
 
-  <!-- Card edge glow -->
-  <ellipse cx="450" cy="555" rx="200" ry="5" fill="rgba(255,200,120,0.05)" filter="url(#medblur)"/>
+  <!-- ============================================== -->
+  <!-- SKILLS SECTION (880-1120) -->
+  <!-- ============================================== -->
+  <line x1="90" y1="895" x2="810" y2="895" stroke="url(#fline)" stroke-width="0.5"/>
 
-  <!-- ============================================================ -->
-  <!-- TECH STACK SECTION (840 - 1050) -->
-  <!-- ============================================================ -->
-  <rect x="0" y="840" width="900" height="210" fill="#0c1020"/>
-  <line x1="100" y1="855" x2="800" y2="855" stroke="rgba(255,200,120,0.06)" stroke-width="0.5"/>
+  <text x="90" y="940" font-family="Georgia, serif" font-size="22" fill="#e8e0d4" font-weight="700">Skills</text>
+  <text x="173" y="940" font-family="'Courier New', monospace" font-size="13" fill="#6a6258" letter-spacing="1">/ &#xae30;&#xc220; &#xc2a4;&#xd0dd;</text>
 
-  <!-- Bone icon -->
-  <g transform="translate(108, 885) scale(0.35)" fill="rgba(255,200,120,0.3)">
-    <rect x="8" y="0" width="24" height="12" rx="2"/>
-    <circle cx="8" cy="0" r="6"/><circle cx="8" cy="12" r="6"/>
-    <circle cx="32" cy="0" r="6"/><circle cx="32" cy="12" r="6"/>
-  </g>
-  <text x="130" y="890" font-family="Georgia, serif" font-size="14" fill="#c8b898" font-weight="600">toys i play with</text>
+  <!-- Skill categories -->
+  <text x="90" y="980" font-family="'Courier New', monospace" font-size="12" fill="#9e9588" letter-spacing="1">FRONTEND</text>
 
-  <!-- Skill pills Row 1 -->
-  <rect x="100" y="915" width="100" height="32" rx="16" fill="rgba(227,79,38,0.08)" stroke="rgba(227,79,38,0.2)" stroke-width="0.5"/>
-  <circle cx="118" cy="931" r="3.5" fill="#E34F26" opacity="0.7"/>
-  <text x="128" y="936" font-family="'Courier New', monospace" font-size="11" fill="#e8e0d4">HTML</text>
+  <rect x="90" y="995" width="100" height="36" rx="18" fill="rgba(227,79,38,0.08)" stroke="rgba(227,79,38,0.2)" stroke-width="0.5"/>
+  <circle cx="110" cy="1013" r="4" fill="#E34F26" opacity="0.8"/>
+  <text x="122" y="1018" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">HTML</text>
 
-  <rect x="212" y="915" width="85" height="32" rx="16" fill="rgba(21,114,182,0.08)" stroke="rgba(21,114,182,0.2)" stroke-width="0.5"/>
-  <circle cx="230" cy="931" r="3.5" fill="#1572B6" opacity="0.7"/>
-  <text x="240" y="936" font-family="'Courier New', monospace" font-size="11" fill="#e8e0d4">CSS</text>
+  <rect x="200" y="995" width="90" height="36" rx="18" fill="rgba(21,114,182,0.08)" stroke="rgba(21,114,182,0.2)" stroke-width="0.5"/>
+  <circle cx="220" cy="1013" r="4" fill="#1572B6" opacity="0.8"/>
+  <text x="232" y="1018" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">CSS</text>
 
-  <rect x="309" y="915" width="138" height="32" rx="16" fill="rgba(247,223,30,0.06)" stroke="rgba(247,223,30,0.2)" stroke-width="0.5"/>
-  <circle cx="327" cy="931" r="3.5" fill="#F7DF1E" opacity="0.7"/>
-  <text x="337" y="936" font-family="'Courier New', monospace" font-size="11" fill="#e8e0d4">JavaScript</text>
+  <rect x="300" y="995" width="145" height="36" rx="18" fill="rgba(247,223,30,0.06)" stroke="rgba(247,223,30,0.2)" stroke-width="0.5"/>
+  <circle cx="320" cy="1013" r="4" fill="#F7DF1E" opacity="0.8"/>
+  <text x="332" y="1018" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">JavaScript</text>
 
-  <rect x="459" y="915" width="105" height="32" rx="16" fill="rgba(97,218,251,0.06)" stroke="rgba(97,218,251,0.2)" stroke-width="0.5"/>
-  <circle cx="477" cy="931" r="3.5" fill="#61DAFB" opacity="0.7"/>
-  <text x="487" y="936" font-family="'Courier New', monospace" font-size="11" fill="#e8e0d4">React</text>
+  <rect x="455" y="995" width="110" height="36" rx="18" fill="rgba(97,218,251,0.06)" stroke="rgba(97,218,251,0.2)" stroke-width="0.5"/>
+  <circle cx="475" cy="1013" r="4" fill="#61DAFB" opacity="0.8"/>
+  <text x="487" y="1018" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">React</text>
 
-  <rect x="576" y="915" width="110" height="32" rx="16" fill="rgba(55,118,171,0.08)" stroke="rgba(55,118,171,0.2)" stroke-width="0.5"/>
-  <circle cx="594" cy="931" r="3.5" fill="#3776AB" opacity="0.7"/>
-  <text x="604" y="936" font-family="'Courier New', monospace" font-size="11" fill="#e8e0d4">Python</text>
+  <text x="90" y="1060" font-family="'Courier New', monospace" font-size="12" fill="#9e9588" letter-spacing="1">MOBILE / BACKEND</text>
 
-  <!-- Row 2 -->
-  <rect x="100" y="958" width="115" height="32" rx="16" fill="rgba(243,118,38,0.06)" stroke="rgba(243,118,38,0.2)" stroke-width="0.5"/>
-  <circle cx="118" cy="974" r="3.5" fill="#F37626" opacity="0.7"/>
-  <text x="128" y="979" font-family="'Courier New', monospace" font-size="11" fill="#e8e0d4">Jupyter</text>
+  <rect x="90" y="1075" width="115" height="36" rx="18" fill="rgba(66,165,245,0.06)" stroke="rgba(66,165,245,0.2)" stroke-width="0.5"/>
+  <circle cx="110" cy="1093" r="4" fill="#42A5F5" opacity="0.8"/>
+  <text x="122" y="1098" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">Flutter</text>
 
-  <rect x="227" y="958" width="85" height="32" rx="16" fill="rgba(240,80,50,0.06)" stroke="rgba(240,80,50,0.2)" stroke-width="0.5"/>
-  <circle cx="245" cy="974" r="3.5" fill="#F05032" opacity="0.7"/>
-  <text x="255" y="979" font-family="'Courier New', monospace" font-size="11" fill="#e8e0d4">Git</text>
+  <rect x="215" y="1075" width="120" height="36" rx="18" fill="rgba(104,159,56,0.06)" stroke="rgba(104,159,56,0.2)" stroke-width="0.5"/>
+  <circle cx="235" cy="1093" r="4" fill="#68a038" opacity="0.8"/>
+  <text x="247" y="1098" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">Node.js</text>
 
-  <rect x="324" y="958" width="110" height="32" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-  <circle cx="342" cy="974" r="3.5" fill="#fff" opacity="0.5"/>
-  <text x="352" y="979" font-family="'Courier New', monospace" font-size="11" fill="#e8e0d4">GitHub</text>
+  <rect x="345" y="1075" width="115" height="36" rx="18" fill="rgba(55,118,171,0.08)" stroke="rgba(55,118,171,0.2)" stroke-width="0.5"/>
+  <circle cx="365" cy="1093" r="4" fill="#3776AB" opacity="0.8"/>
+  <text x="377" y="1098" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">Python</text>
 
-  <rect x="446" y="958" width="118" height="32" rx="16" fill="rgba(0,122,204,0.06)" stroke="rgba(0,122,204,0.2)" stroke-width="0.5"/>
-  <circle cx="464" cy="974" r="3.5" fill="#007ACC" opacity="0.7"/>
-  <text x="474" y="979" font-family="'Courier New', monospace" font-size="11" fill="#e8e0d4">VS Code</text>
+  <text x="90" y="1140" font-family="'Courier New', monospace" font-size="12" fill="#9e9588" letter-spacing="1">TOOLS</text>
 
-  <!-- fetching... -->
-  <text x="100" y="1025" font-family="'Courier New', monospace" font-size="10" fill="#5a5548">
-    fetching new toys...
-    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  <rect x="90" y="1155" width="88" height="36" rx="18" fill="rgba(240,80,50,0.06)" stroke="rgba(240,80,50,0.2)" stroke-width="0.5"/>
+  <circle cx="110" cy="1173" r="4" fill="#F05032" opacity="0.8"/>
+  <text x="122" y="1178" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">Git</text>
+
+  <rect x="188" y="1155" width="115" height="36" rx="18" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+  <circle cx="208" cy="1173" r="4" fill="#fff" opacity="0.5"/>
+  <text x="220" y="1178" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">GitHub</text>
+
+  <rect x="313" y="1155" width="125" height="36" rx="18" fill="rgba(0,122,204,0.06)" stroke="rgba(0,122,204,0.2)" stroke-width="0.5"/>
+  <circle cx="333" cy="1173" r="4" fill="#007ACC" opacity="0.8"/>
+  <text x="345" y="1178" font-family="'Courier New', monospace" font-size="13" fill="#e8e0d4">VS Code</text>
+
+  <!-- ============================================== -->
+  <!-- PROJECTS SECTION (1220-1870) -->
+  <!-- ============================================== -->
+  <line x1="90" y1="1230" x2="810" y2="1230" stroke="url(#fline)" stroke-width="0.5"/>
+
+  <text x="90" y="1275" font-family="Georgia, serif" font-size="22" fill="#e8e0d4" font-weight="700">Projects</text>
+  <text x="203" y="1275" font-family="'Courier New', monospace" font-size="13" fill="#6a6258" letter-spacing="1">/ &#xd504;&#xb85c;&#xc81d;&#xd2b8;</text>
+
+  <!-- Project 1 -->
+  <rect x="90" y="1300" width="720" height="105" rx="14" fill="rgba(255,255,255,0.015)" stroke="url(#projBorder1)" stroke-width="0.5"/>
+  <text x="120" y="1332" font-family="Georgia, serif" font-size="18" fill="#e8e0d4" font-weight="700">Development-Land</text>
+  <rect x="310" y="1318" width="52" height="20" rx="10" fill="rgba(247,223,30,0.1)" stroke="rgba(247,223,30,0.2)" stroke-width="0.5"/>
+  <text x="336" y="1332" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#F7DF1E">JS</text>
+  <text x="120" y="1358" font-family="'Courier New', monospace" font-size="13" fill="#9e9588">&#xac1c;&#xbc1c;&#xc790; &#xcee4;&#xbba4;&#xb2c8;&#xd2f0; &#xd50c;&#xb7ab;&#xd3fc; - &#xc6f9; &#xac1c;&#xbc1c; &#xd559;&#xc2b5; &#xbc0f; &#xd611;&#xc5c5; &#xacf5;&#xac04;</text>
+  <text x="120" y="1385" font-family="'Courier New', monospace" font-size="11" fill="#6a6258">JavaScript / Full-stack Web App</text>
+
+  <!-- Project 2 -->
+  <rect x="90" y="1420" width="720" height="105" rx="14" fill="rgba(255,255,255,0.015)" stroke="url(#projBorder2)" stroke-width="0.5"/>
+  <text x="120" y="1452" font-family="Georgia, serif" font-size="18" fill="#e8e0d4" font-weight="700">smartroute</text>
+  <rect x="235" y="1438" width="65" height="20" rx="10" fill="rgba(66,165,245,0.1)" stroke="rgba(66,165,245,0.2)" stroke-width="0.5"/>
+  <text x="267" y="1452" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#42A5F5">Flutter</text>
+  <text x="120" y="1478" font-family="'Courier New', monospace" font-size="13" fill="#9e9588">&#xc2a4;&#xb9c8;&#xd2b8; &#xacbd;&#xb85c; &#xcd94;&#xcc9c; &#xc571; - &#xcd5c;&#xc801;&#xc758; &#xc774;&#xb3d9; &#xacbd;&#xb85c;&#xb97c; &#xc548;&#xb0b4;</text>
+  <text x="120" y="1505" font-family="'Courier New', monospace" font-size="11" fill="#6a6258">Dart / Flutter / Mobile App</text>
+
+  <!-- Project 3 -->
+  <rect x="90" y="1540" width="720" height="105" rx="14" fill="rgba(255,255,255,0.015)" stroke="url(#projBorder1)" stroke-width="0.5"/>
+  <text x="120" y="1572" font-family="Georgia, serif" font-size="18" fill="#e8e0d4" font-weight="700">hate-speech-reporter</text>
+  <rect x="345" y="1558" width="52" height="20" rx="10" fill="rgba(247,223,30,0.1)" stroke="rgba(247,223,30,0.2)" stroke-width="0.5"/>
+  <text x="371" y="1572" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#F7DF1E">JS</text>
+  <text x="120" y="1598" font-family="'Courier New', monospace" font-size="13" fill="#9e9588">&#xc628;&#xb77c;&#xc778; &#xd5c8;&#xc624; &#xbc1c;&#xc5b8; &#uac10;&#xc9c0; &#xbc0f; &#uc2e0;&#xace0; &#uc2dc;&#uc2a4;&#ud15c;</text>
+  <text x="120" y="1625" font-family="'Courier New', monospace" font-size="11" fill="#6a6258">JavaScript / NLP / Social Good</text>
+
+  <!-- Project 4 -->
+  <rect x="90" y="1660" width="720" height="105" rx="14" fill="rgba(255,255,255,0.015)" stroke="url(#projBorder2)" stroke-width="0.5"/>
+  <text x="120" y="1692" font-family="Georgia, serif" font-size="18" fill="#e8e0d4" font-weight="700">semyeong-pass</text>
+  <rect x="285" y="1678" width="55" height="20" rx="10" fill="rgba(104,159,56,0.1)" stroke="rgba(104,159,56,0.2)" stroke-width="0.5"/>
+  <text x="312" y="1692" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#68a038">EJS</text>
+  <text x="120" y="1718" font-family="'Courier New', monospace" font-size="13" fill="#9e9588">&#xc138;&#xba85; &#xd328;&#xc2a4; - Node.js &#xae30;&#xbc18; &#xc6f9; &#xc11c;&#xbe44;&#xc2a4;</text>
+  <text x="120" y="1745" font-family="'Courier New', monospace" font-size="11" fill="#6a6258">EJS / Node.js / Express</text>
+
+  <!-- Project 5 -->
+  <rect x="90" y="1780" width="720" height="105" rx="14" fill="rgba(255,255,255,0.015)" stroke="url(#projBorder1)" stroke-width="0.5"/>
+  <text x="120" y="1812" font-family="Georgia, serif" font-size="18" fill="#e8e0d4" font-weight="700">Focus-monitoring</text>
+  <rect x="305" y="1798" width="70" height="20" rx="10" fill="rgba(55,118,171,0.1)" stroke="rgba(55,118,171,0.2)" stroke-width="0.5"/>
+  <text x="340" y="1812" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#3776AB">Python</text>
+  <text x="120" y="1838" font-family="'Courier New', monospace" font-size="13" fill="#9e9588">&#xc9d1;&#xc911;&#xb825; &#ubaa8;&#xb2c8;&#xd130;&#xb9c1; - &#xd559;&#xc2b5; &#xc9d1;&#xc911;&#xb3c4; &#xbd84;&#xc11d; &#xb3c4;&#xad6c;</text>
+  <text x="120" y="1865" font-family="'Courier New', monospace" font-size="11" fill="#6a6258">Python / Computer Vision / Productivity</text>
+
+  <!-- More projects link -->
+  <text x="450" y="1920" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#6a6258">
+    + 14 more repositories at github.com/jihonshiny
   </text>
-  <circle cx="220" cy="1022" r="2" fill="#ffc878" opacity="0.3">
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="229" cy="1022" r="2" fill="#ffc878" opacity="0.3">
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.5s" repeatCount="indefinite" begin="0.3s"/>
-  </circle>
-  <circle cx="238" cy="1022" r="2" fill="#ffc878" opacity="0.3">
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.5s" repeatCount="indefinite" begin="0.6s"/>
-  </circle>
 
-  <!-- ============================================================ -->
-  <!-- PROJECTS SECTION (1050 - 1330) -->
-  <!-- ============================================================ -->
-  <rect x="0" y="1050" width="900" height="280" fill="#0c1020"/>
-  <line x1="100" y1="1065" x2="800" y2="1065" stroke="rgba(255,200,120,0.06)" stroke-width="0.5"/>
+  <!-- ============================================== -->
+  <!-- STATS SUMMARY (1950-2080) -->
+  <!-- ============================================== -->
+  <line x1="90" y1="1960" x2="810" y2="1960" stroke="url(#fline)" stroke-width="0.5"/>
 
-  <!-- Paw icon -->
-  <g transform="translate(116, 1095) scale(0.6)" fill="rgba(255,200,120,0.3)">
-    <ellipse cx="0" cy="0" rx="5" ry="6.5"/>
-    <circle cx="-5" cy="-7" r="2.8"/><circle cx="0" cy="-9" r="2.8"/><circle cx="5" cy="-7" r="2.8"/>
-  </g>
-  <text x="135" y="1098" font-family="Georgia, serif" font-size="14" fill="#c8b898" font-weight="600">things i've built</text>
+  <text x="90" y="2005" font-family="Georgia, serif" font-size="22" fill="#e8e0d4" font-weight="700">At a Glance</text>
 
-  <!-- Project cards with glow borders -->
-  <rect x="100" y="1118" width="340" height="72" rx="12" fill="rgba(255,255,255,0.015)" stroke="rgba(255,200,120,0.06)" stroke-width="0.5"/>
-  <text x="120" y="1147" font-family="Georgia, serif" font-size="13" fill="#e8e0d4" font-weight="600">anime-recommend-system</text>
-  <text x="120" y="1168" font-family="'Courier New', monospace" font-size="10" fill="#5a5548">content-based anime recommendations</text>
-  <rect x="120" y="1175" width="40" height="4" rx="2" fill="rgba(243,118,38,0.3)"/>
-  <text x="168" y="1179" font-family="'Courier New', monospace" font-size="9" fill="#8b8578">Jupyter</text>
+  <!-- Stat boxes -->
+  <rect x="90" y="2025" width="195" height="80" rx="14" fill="rgba(255,255,255,0.015)" stroke="rgba(255,200,120,0.08)" stroke-width="0.5"/>
+  <text x="187" y="2063" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#ffc878" font-weight="700">19</text>
+  <text x="187" y="2085" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#6a6258">Repositories</text>
 
-  <rect x="460" y="1118" width="340" height="72" rx="12" fill="rgba(255,255,255,0.015)" stroke="rgba(142,200,255,0.06)" stroke-width="0.5"/>
-  <text x="480" y="1147" font-family="Georgia, serif" font-size="13" fill="#e8e0d4" font-weight="600">Focus-monitoring</text>
-  <text x="480" y="1168" font-family="'Courier New', monospace" font-size="10" fill="#5a5548">stay focused, good boy!</text>
-  <rect x="480" y="1175" width="40" height="4" rx="2" fill="rgba(55,118,171,0.3)"/>
-  <text x="528" y="1179" font-family="'Courier New', monospace" font-size="9" fill="#8b8578">Python</text>
+  <rect x="305" y="2025" width="195" height="80" rx="14" fill="rgba(255,255,255,0.015)" stroke="rgba(100,170,255,0.08)" stroke-width="0.5"/>
+  <text x="402" y="2063" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#64aaff" font-weight="700">7+</text>
+  <text x="402" y="2085" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#6a6258">Languages</text>
 
-  <rect x="100" y="1205" width="340" height="72" rx="12" fill="rgba(255,255,255,0.015)" stroke="rgba(255,200,120,0.06)" stroke-width="0.5"/>
-  <text x="120" y="1234" font-family="Georgia, serif" font-size="13" fill="#e8e0d4" font-weight="600">hate-speech-reporter</text>
-  <text x="120" y="1255" font-family="'Courier New', monospace" font-size="10" fill="#5a5548">keeping the internet a nicer place</text>
-  <rect x="120" y="1262" width="40" height="4" rx="2" fill="rgba(247,223,30,0.3)"/>
-  <text x="168" y="1266" font-family="'Courier New', monospace" font-size="9" fill="#8b8578">JS</text>
+  <rect x="520" y="2025" width="195" height="80" rx="14" fill="rgba(255,255,255,0.015)" stroke="rgba(180,130,255,0.08)" stroke-width="0.5"/>
+  <text x="617" y="2063" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#b482ff" font-weight="700">3+</text>
+  <text x="617" y="2085" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#6a6258">Platforms</text>
 
-  <rect x="460" y="1205" width="340" height="72" rx="12" fill="rgba(255,255,255,0.015)" stroke="rgba(142,200,255,0.06)" stroke-width="0.5"/>
-  <text x="480" y="1234" font-family="Georgia, serif" font-size="13" fill="#e8e0d4" font-weight="600">business-closure-rate</text>
-  <text x="480" y="1255" font-family="'Courier New', monospace" font-size="10" fill="#5a5548">data sniffing for business insights</text>
-  <rect x="480" y="1262" width="40" height="4" rx="2" fill="rgba(55,118,171,0.3)"/>
-  <text x="528" y="1266" font-family="'Courier New', monospace" font-size="9" fill="#8b8578">Python</text>
+  <text x="450" y="2140" text-anchor="middle" font-family="'Courier New', monospace" font-size="12" fill="#5a5548">Web / Mobile / Data Analysis</text>
 
-  <!-- ============================================================ -->
-  <!-- CONTACT + FOOTER (1330 - 1750) -->
-  <!-- ============================================================ -->
-  <rect x="0" y="1330" width="900" height="420" fill="#0c1020"/>
-  <line x1="100" y1="1345" x2="800" y2="1345" stroke="rgba(255,200,120,0.06)" stroke-width="0.5"/>
+  <!-- ============================================== -->
+  <!-- FOOTER (2150-2300) -->
+  <!-- ============================================== -->
+  <line x1="90" y1="2170" x2="810" y2="2170" stroke="url(#fline)" stroke-width="0.5"/>
 
-  <text x="450" y="1390" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#5a5548">
+  <text x="450" y="2210" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#6a6258">
     your-email@example.com
   </text>
 
-  <!-- Big paw watermark -->
-  <g transform="translate(450, 1520) scale(5)" fill="rgba(255,200,120,0.02)">
-    <ellipse cx="0" cy="0" rx="10" ry="13"/>
-    <circle cx="-10" cy="-14" r="6"/>
-    <circle cx="0" cy="-18" r="6"/>
-    <circle cx="10" cy="-14" r="6"/>
-  </g>
-
-  <!-- Paw prints walking away (getting smaller) -->
-  <g opacity="0.06" fill="#fff">
-    <g transform="translate(330, 1440) rotate(-5) scale(0.6)">
+  <!-- Paw prints -->
+  <g opacity="0.05" fill="#fff">
+    <g transform="translate(340, 2255) rotate(-5) scale(0.55)">
       <ellipse cx="0" cy="0" rx="5" ry="6.5"/><circle cx="-5" cy="-7" r="2.8"/><circle cx="0" cy="-9" r="2.8"/><circle cx="5" cy="-7" r="2.8"/>
     </g>
-    <g transform="translate(375, 1430) rotate(8) scale(0.55)">
+    <g transform="translate(385, 2247) rotate(8) scale(0.5)">
       <ellipse cx="0" cy="0" rx="5" ry="6.5"/><circle cx="-5" cy="-7" r="2.8"/><circle cx="0" cy="-9" r="2.8"/><circle cx="5" cy="-7" r="2.8"/>
     </g>
-    <g transform="translate(420, 1438) rotate(-3) scale(0.5)">
+    <g transform="translate(425, 2254) rotate(-3) scale(0.45)">
       <ellipse cx="0" cy="0" rx="5" ry="6.5"/><circle cx="-5" cy="-7" r="2.8"/><circle cx="0" cy="-9" r="2.8"/><circle cx="5" cy="-7" r="2.8"/>
     </g>
-    <g transform="translate(460, 1432) rotate(6) scale(0.45)">
+    <g transform="translate(462, 2248) rotate(5) scale(0.4)">
       <ellipse cx="0" cy="0" rx="5" ry="6.5"/><circle cx="-5" cy="-7" r="2.8"/><circle cx="0" cy="-9" r="2.8"/><circle cx="5" cy="-7" r="2.8"/>
     </g>
-    <g transform="translate(495, 1437) rotate(-4) scale(0.4)">
+    <g transform="translate(494, 2253) rotate(-3) scale(0.35)">
       <ellipse cx="0" cy="0" rx="5" ry="6.5"/><circle cx="-5" cy="-7" r="2.8"/><circle cx="0" cy="-9" r="2.8"/><circle cx="5" cy="-7" r="2.8"/>
     </g>
-    <g transform="translate(525, 1433) rotate(3) scale(0.35)">
+    <g transform="translate(520, 2249) rotate(4) scale(0.3)">
       <ellipse cx="0" cy="0" rx="5" ry="6.5"/><circle cx="-5" cy="-7" r="2.8"/><circle cx="0" cy="-9" r="2.8"/><circle cx="5" cy="-7" r="2.8"/>
     </g>
-    <g transform="translate(550, 1436) rotate(-2) scale(0.3)">
+    <g transform="translate(543, 2252) rotate(-2) scale(0.25)">
       <ellipse cx="0" cy="0" rx="5" ry="6.5"/><circle cx="-5" cy="-7" r="2.8"/><circle cx="0" cy="-9" r="2.8"/><circle cx="5" cy="-7" r="2.8"/>
     </g>
   </g>
 
-  <text x="450" y="1480" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#2a2520" font-style="italic">
+  <text x="450" y="2280" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#2a2520" font-style="italic">
     *wags tail and walks away*
   </text>
 
-  <!-- Bottom line -->
-  <line x1="0" y1="1749" x2="900" y2="1749" stroke="url(#fline)" stroke-width="0.5">
+  <line x1="0" y1="2299" x2="900" y2="2299" stroke="url(#fline)" stroke-width="0.5">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
   </line>
 </svg>
