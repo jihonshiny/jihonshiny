@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="260" viewBox="0 0 800 260">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="800" height="260" viewBox="0 0 800 260">
   <defs>
     <linearGradient id="abg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#12141d"/>
@@ -37,33 +37,33 @@
   </text>
 
   <text x="40" y="130" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
-    <tspan fill="#8b8578">type</tspan>
+    <tspan fill="#8b8578">role</tspan>
     <tspan fill="#5a5548"> ........... </tspan>
-    <tspan fill="#e8e0d4">&#xace0;&#xb4f1;&#xd559;&#xc0dd; &#xd504;&#xb860;&#xd2b8;&#xc5d4;&#xb4dc; &#xac1c;&#xbc1c;&#xc790;</tspan>
+    <tspan fill="#e8e0d4">Frontend Developer (High school student)</tspan>
   </text>
 
   <text x="40" y="155" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
-    <tspan fill="#8b8578">breed</tspan>
+    <tspan fill="#8b8578">stack</tspan>
     <tspan fill="#5a5548"> .......... </tspan>
-    <tspan fill="#e8e0d4">&#xac80;&#xc815; &#xd3ec;&#xba54;&#xb77c;&#xb2c8;&#xc548; (with glasses)</tspan>
+    <tspan fill="#e8e0d4">HTML/CSS/JavaScript/React</tspan>
   </text>
 
   <text x="40" y="180" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
     <tspan fill="#8b8578">skills</tspan>
     <tspan fill="#5a5548"> ......... </tspan>
-    <tspan fill="#e8e0d4">sitting cute, writing code, debugging</tspan>
+    <tspan fill="#e8e0d4">Clean Code, UI Design, Debugging</tspan>
   </text>
 
   <text x="40" y="205" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
     <tspan fill="#8b8578">loves</tspan>
     <tspan fill="#5a5548"> .......... </tspan>
-    <tspan fill="#e8e0d4">treats, belly rubs, clean code</tspan>
+    <tspan fill="#e8e0d4">Animations, Good UX :) </tspan>
   </text>
 
   <text x="40" y="235" font-family="'SF Mono', 'Fira Code', monospace" font-size="13">
     <tspan fill="#8b8578">status</tspan>
     <tspan fill="#5a5548"> ......... </tspan>
-    <tspan fill="#c8b898">sniffing around new tech</tspan>
+    <tspan fill="#c8b898">building my portfolio</tspan>
     <tspan fill="#ffc878"> _</tspan>
     <animate attributeName="opacity" values="1;1" dur="1s" repeatCount="indefinite"/>
   </text>
@@ -72,4 +72,4 @@
   <rect x="430" y="222" width="8" height="15" fill="#ffc878" rx="1">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
-</svg>
+</svg> -->
